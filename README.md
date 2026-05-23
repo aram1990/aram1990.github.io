@@ -85,3 +85,13 @@ Use names like:
 - vampire-1.jpg
 - vampire-2.jpg
 - vampire-3.jpg
+
+
+## Mobile menu update
+This version includes a proper hamburger menu for small screens.
+
+On mobile:
+- The header only shows the RDE logo and a ☰ button.
+- The full menu opens only when the user taps the button.
+- The menu closes after clicking a link.
+- The layout is cleaner and does not push the website content down.

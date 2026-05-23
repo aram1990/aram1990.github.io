@@ -123,4 +123,35 @@ document.addEventListener("DOMContentLoaded", () => {
   [searchInput, categoryFilter, dangerFilter].forEach((control) => {
     if (control) control.addEventListener("input", renderMonsters);
   });
+
+  const menuToggle = document.querySelector(".menu-toggle");
+  const mainNav = document.querySelector(".main-nav");
+
+  if (menuToggle && mainNav) {
+    menuToggle.addEventListener("click", () => {
+      const isOpen = mainNav.classList.toggle("open");
+      menuToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      menuToggle.textContent = isOpen ? "✕" : "☰";
+      menuToggle.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu");
+    });
+
+    document.querySelectorAll(".main-nav .nav-link").forEach((link) => {
+      link.addEventListener("click", () => {
+        mainNav.classList.remove("open");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.textContent = "☰";
+        menuToggle.setAttribute("aria-label", "Open menu");
+      });
+    });
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 760) {
+        mainNav.classList.remove("open");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.textContent = "☰";
+        menuToggle.setAttribute("aria-label", "Open menu");
+      }
+    });
+  }
+
 });
