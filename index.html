@@ -24,18 +24,24 @@ document.addEventListener("DOMContentLoaded", () => {
       </figure>
     `).join("");
 
+    const profileAction = monster.profileUrl
+      ? `<a class="monster-profile-link" href="${monster.profileUrl}">View Full Monster Profile</a>`
+      : `<span class="monster-profile-soon">Full profile coming soon</span>`;
+
     return `
       <article class="monster-card blood-hover">
         <div class="monster-image" role="img" aria-label="${monster.alt}">
           <span>${monster.name}</span>
         </div>
+
         <div class="monster-content">
           <div class="monster-meta">
             <span>${monster.category}</span>
             <span>${monster.origin}</span>
           </div>
+
           <h3>${monster.name}</h3>
-          <p>${monster.description}</p>
+          <p class="monster-description">${monster.description}</p>
 
           <div class="monster-gallery" aria-label="${monster.name} image placeholders">
             ${gallery}
@@ -46,10 +52,11 @@ document.addEventListener("DOMContentLoaded", () => {
             <p><strong>Weaknesses:</strong> ${monster.weaknesses}</p>
           </div>
 
-          ${monster.profileUrl ? `<a class="monster-profile-link" href="${monster.profileUrl}">View Full Monster Profile</a>` : `<span class="monster-profile-soon">Full profile coming soon</span>`}
-
-          <div class="danger danger-${monster.dangerLevel.toLowerCase()}">
-            Danger Level: ${monster.dangerLevel}
+          <div class="monster-card-bottom">
+            ${profileAction}
+            <div class="danger danger-${monster.dangerLevel.toLowerCase()}">
+              Danger Level: ${monster.dangerLevel}
+            </div>
           </div>
         </div>
       </article>

@@ -667,3 +667,44 @@ textarea {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* Equal monster card layout fix */
+.monster-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.monster-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.monster-description {
+  min-height: 104px;
+}
+
+.monster-details {
+  min-height: 158px;
+}
+
+.monster-card-bottom {
+  margin-top: auto;
+  display: grid;
+  gap: 12px;
+}
+
+.monster-profile-link,
+.monster-profile-soon {
+  min-height: 46px;
+  align-items: center;
+}
+
+.danger {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
