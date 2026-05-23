@@ -156,31 +156,31 @@ const monsters = [
     "profileUrl": ""
   },
   {
-    "name": "Wendigo",
-    "category": "Cannibal Spirit",
-    "origin": "Algonquian folklore",
-    "description": "A hunger-driven spirit or monster associated with greed, winter, isolation, and cannibalism.",
-    "strengths": "Endless hunger, mimicry, speed, cold resistance",
-    "weaknesses": "Fire, spiritual rituals, starvation of its influence",
-    "dangerLevel": "Extreme",
-    "image": "assets/images/monsters/wendigo-1.jpg",
-    "alt": "Wendigo horror monster illustration placeholder",
-    "images": [
-      {
-        "src": "assets/images/monsters/wendigo-1.jpg",
-        "alt": "Wendigo horror image placeholder 1"
-      },
-      {
-        "src": "assets/images/monsters/wendigo-2.jpg",
-        "alt": "Wendigo horror image placeholder 2"
-      },
-      {
-        "src": "assets/images/monsters/wendigo-3.jpg",
-        "alt": "Wendigo horror image placeholder 3"
-      }
-    ],
-    "profileUrl": ""
-  },
+  "name": "Wendigo",
+  "category": "Cannibal Spirit",
+  "origin": "Algonquian folklore",
+  "description": "A hunger-driven spirit or monster associated with greed, winter, isolation, and cannibalism.",
+  "strengths": "Endless hunger, mimicry, speed, cold resistance",
+  "weaknesses": "Fire, spiritual rituals, starvation of its influence",
+  "dangerLevel": "Extreme",
+  "image": "assets/images/monsters/wendigo-1.jpg",
+  "alt": "Wendigo horror monster illustration placeholder",
+  "images": [
+    {
+      "src": "assets/images/monsters/wendigo-1.jpg",
+      "alt": "Wendigo horror image placeholder 1"
+    },
+    {
+      "src": "assets/images/monsters/wendigo-2.jpg",
+      "alt": "Wendigo horror image placeholder 2"
+    },
+    {
+      "src": "assets/images/monsters/wendigo-3.jpg",
+      "alt": "Wendigo horror image placeholder 3"
+    }
+  ],
+  "profileUrl": "monster-profiles/wendigo.html"
+},
   {
     "name": "Banshee",
     "category": "Death Spirit",
