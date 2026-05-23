@@ -23,7 +23,8 @@ const monsters = [
         "alt": "Vampire horror image placeholder 3"
       }
     ],
-    "profileUrl": "monster-profiles/vampire.html"
+    "profileUrl": "monster-profiles/vampire.html",
+    "slug": "vampire"
   },
   {
     "name": "Werewolf",
@@ -49,7 +50,8 @@ const monsters = [
         "alt": "Werewolf horror image placeholder 3"
       }
     ],
-    "profileUrl": "monster-profiles/werewolf.html"
+    "profileUrl": "monster-profiles/werewolf.html",
+    "slug": "werewolf"
   },
   {
     "name": "Zombie",
@@ -75,7 +77,8 @@ const monsters = [
         "alt": "Zombie horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/zombie.html",
+    "slug": "zombie"
   },
   {
     "name": "Ghost",
@@ -101,7 +104,8 @@ const monsters = [
         "alt": "Ghost horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/ghost.html",
+    "slug": "ghost"
   },
   {
     "name": "Demon",
@@ -127,7 +131,8 @@ const monsters = [
         "alt": "Demon horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/demon.html",
+    "slug": "demon"
   },
   {
     "name": "Witch",
@@ -153,34 +158,36 @@ const monsters = [
         "alt": "Witch horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/witch.html",
+    "slug": "witch"
   },
   {
-  "name": "Wendigo",
-  "category": "Cannibal Spirit",
-  "origin": "Algonquian folklore",
-  "description": "A hunger-driven spirit or monster associated with greed, winter, isolation, and cannibalism.",
-  "strengths": "Endless hunger, mimicry, speed, cold resistance",
-  "weaknesses": "Fire, spiritual rituals, starvation of its influence",
-  "dangerLevel": "Extreme",
-  "image": "assets/images/monsters/wendigo-1.jpg",
-  "alt": "Wendigo horror monster illustration placeholder",
-  "images": [
-    {
-      "src": "assets/images/monsters/wendigo-1.jpg",
-      "alt": "Wendigo horror image placeholder 1"
-    },
-    {
-      "src": "assets/images/monsters/wendigo-2.jpg",
-      "alt": "Wendigo horror image placeholder 2"
-    },
-    {
-      "src": "assets/images/monsters/wendigo-3.jpg",
-      "alt": "Wendigo horror image placeholder 3"
-    }
-  ],
-  "profileUrl": "monster-profiles/wendigo.html"
-},
+    "name": "Wendigo",
+    "category": "Cannibal Spirit",
+    "origin": "Algonquian folklore",
+    "description": "A hunger-driven spirit or monster associated with greed, winter, isolation, and cannibalism.",
+    "strengths": "Endless hunger, mimicry, speed, cold resistance",
+    "weaknesses": "Fire, spiritual rituals, starvation of its influence",
+    "dangerLevel": "Extreme",
+    "image": "assets/images/monsters/wendigo-1.jpg",
+    "alt": "Wendigo horror monster illustration placeholder",
+    "images": [
+      {
+        "src": "assets/images/monsters/wendigo-1.jpg",
+        "alt": "Wendigo horror image placeholder 1"
+      },
+      {
+        "src": "assets/images/monsters/wendigo-2.jpg",
+        "alt": "Wendigo horror image placeholder 2"
+      },
+      {
+        "src": "assets/images/monsters/wendigo-3.jpg",
+        "alt": "Wendigo horror image placeholder 3"
+      }
+    ],
+    "profileUrl": "monster-profiles/wendigo.html",
+    "slug": "wendigo"
+  },
   {
     "name": "Banshee",
     "category": "Death Spirit",
@@ -205,7 +212,8 @@ const monsters = [
         "alt": "Banshee horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/banshee.html",
+    "slug": "banshee"
   },
   {
     "name": "Mummy",
@@ -231,7 +239,8 @@ const monsters = [
         "alt": "Mummy horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/mummy.html",
+    "slug": "mummy"
   },
   {
     "name": "Ghoul",
@@ -257,7 +266,8 @@ const monsters = [
         "alt": "Ghoul horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/ghoul.html",
+    "slug": "ghoul"
   },
   {
     "name": "Shadow Creature",
@@ -283,7 +293,8 @@ const monsters = [
         "alt": "Shadow Creature horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/shadow-creature.html",
+    "slug": "shadow-creature"
   },
   {
     "name": "Kraken",
@@ -309,7 +320,8 @@ const monsters = [
         "alt": "Kraken horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/kraken.html",
+    "slug": "kraken"
   },
   {
     "name": "Siren",
@@ -335,7 +347,8 @@ const monsters = [
         "alt": "Siren horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/siren.html",
+    "slug": "siren"
   },
   {
     "name": "Skinwalker",
@@ -361,7 +374,8 @@ const monsters = [
         "alt": "Skinwalker horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/skinwalker.html",
+    "slug": "skinwalker"
   },
   {
     "name": "Poltergeist",
@@ -387,7 +401,8 @@ const monsters = [
         "alt": "Poltergeist horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/poltergeist.html",
+    "slug": "poltergeist"
   },
   {
     "name": "Possessed Doll",
@@ -413,7 +428,8 @@ const monsters = [
         "alt": "Possessed Doll horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/possessed-doll.html",
+    "slug": "possessed-doll"
   },
   {
     "name": "Grim Reaper",
@@ -439,7 +455,8 @@ const monsters = [
         "alt": "Grim Reaper horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/grim-reaper.html",
+    "slug": "grim-reaper"
   },
   {
     "name": "Swamp Monster",
@@ -465,7 +482,8 @@ const monsters = [
         "alt": "Swamp Monster horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/swamp-monster.html",
+    "slug": "swamp-monster"
   },
   {
     "name": "Hellhound",
@@ -491,7 +509,8 @@ const monsters = [
         "alt": "Hellhound horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/hellhound.html",
+    "slug": "hellhound"
   },
   {
     "name": "Leviathan",
@@ -517,7 +536,8 @@ const monsters = [
         "alt": "Leviathan horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/leviathan.html",
+    "slug": "leviathan"
   },
   {
     "name": "Chimera",
@@ -543,7 +563,8 @@ const monsters = [
         "alt": "Chimera horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/chimera.html",
+    "slug": "chimera"
   },
   {
     "name": "Minotaur",
@@ -569,7 +590,8 @@ const monsters = [
         "alt": "Minotaur horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/minotaur.html",
+    "slug": "minotaur"
   },
   {
     "name": "Medusa",
@@ -595,7 +617,8 @@ const monsters = [
         "alt": "Medusa horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/medusa.html",
+    "slug": "medusa"
   },
   {
     "name": "Harpy",
@@ -621,7 +644,8 @@ const monsters = [
         "alt": "Harpy horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/harpy.html",
+    "slug": "harpy"
   },
   {
     "name": "Cyclops",
@@ -647,7 +671,8 @@ const monsters = [
         "alt": "Cyclops horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/cyclops.html",
+    "slug": "cyclops"
   },
   {
     "name": "Hydra",
@@ -673,7 +698,8 @@ const monsters = [
         "alt": "Hydra horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/hydra.html",
+    "slug": "hydra"
   },
   {
     "name": "Gorgon",
@@ -699,7 +725,8 @@ const monsters = [
         "alt": "Gorgon horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/gorgon.html",
+    "slug": "gorgon"
   },
   {
     "name": "Cerberus",
@@ -725,7 +752,8 @@ const monsters = [
         "alt": "Cerberus horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/cerberus.html",
+    "slug": "cerberus"
   },
   {
     "name": "Draugr",
@@ -751,7 +779,8 @@ const monsters = [
         "alt": "Draugr horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/draugr.html",
+    "slug": "draugr"
   },
   {
     "name": "Troll",
@@ -777,7 +806,8 @@ const monsters = [
         "alt": "Troll horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/troll.html",
+    "slug": "troll"
   },
   {
     "name": "Goblin",
@@ -803,7 +833,8 @@ const monsters = [
         "alt": "Goblin horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/goblin.html",
+    "slug": "goblin"
   },
   {
     "name": "Orc",
@@ -829,7 +860,8 @@ const monsters = [
         "alt": "Orc horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/orc.html",
+    "slug": "orc"
   },
   {
     "name": "Ogre",
@@ -855,7 +887,8 @@ const monsters = [
         "alt": "Ogre horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/ogre.html",
+    "slug": "ogre"
   },
   {
     "name": "Hag",
@@ -881,7 +914,8 @@ const monsters = [
         "alt": "Hag horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/hag.html",
+    "slug": "hag"
   },
   {
     "name": "Doppelganger",
@@ -907,7 +941,8 @@ const monsters = [
         "alt": "Doppelganger horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/doppelganger.html",
+    "slug": "doppelganger"
   },
   {
     "name": "Incubus",
@@ -933,7 +968,8 @@ const monsters = [
         "alt": "Incubus horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/incubus.html",
+    "slug": "incubus"
   },
   {
     "name": "Succubus",
@@ -959,7 +995,8 @@ const monsters = [
         "alt": "Succubus horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/succubus.html",
+    "slug": "succubus"
   },
   {
     "name": "Dybbuk",
@@ -985,7 +1022,8 @@ const monsters = [
         "alt": "Dybbuk horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/dybbuk.html",
+    "slug": "dybbuk"
   },
   {
     "name": "Jinn",
@@ -1011,7 +1049,8 @@ const monsters = [
         "alt": "Jinn horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/jinn.html",
+    "slug": "jinn"
   },
   {
     "name": "Ifrit",
@@ -1037,7 +1076,8 @@ const monsters = [
         "alt": "Ifrit horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/ifrit.html",
+    "slug": "ifrit"
   },
   {
     "name": "Rakshasa",
@@ -1063,7 +1103,8 @@ const monsters = [
         "alt": "Rakshasa horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/rakshasa.html",
+    "slug": "rakshasa"
   },
   {
     "name": "Aswang",
@@ -1089,7 +1130,8 @@ const monsters = [
         "alt": "Aswang horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/aswang.html",
+    "slug": "aswang"
   },
   {
     "name": "Manananggal",
@@ -1115,7 +1157,8 @@ const monsters = [
         "alt": "Manananggal horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/manananggal.html",
+    "slug": "manananggal"
   },
   {
     "name": "Tikbalang",
@@ -1141,7 +1184,8 @@ const monsters = [
         "alt": "Tikbalang horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/tikbalang.html",
+    "slug": "tikbalang"
   },
   {
     "name": "Pontianak",
@@ -1167,7 +1211,8 @@ const monsters = [
         "alt": "Pontianak horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/pontianak.html",
+    "slug": "pontianak"
   },
   {
     "name": "Kuntilanak",
@@ -1193,7 +1238,8 @@ const monsters = [
         "alt": "Kuntilanak horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/kuntilanak.html",
+    "slug": "kuntilanak"
   },
   {
     "name": "Jiangshi",
@@ -1219,7 +1265,8 @@ const monsters = [
         "alt": "Jiangshi horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/jiangshi.html",
+    "slug": "jiangshi"
   },
   {
     "name": "Nian",
@@ -1245,7 +1292,8 @@ const monsters = [
         "alt": "Nian horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/nian.html",
+    "slug": "nian"
   },
   {
     "name": "Kappa",
@@ -1271,7 +1319,8 @@ const monsters = [
         "alt": "Kappa horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/kappa.html",
+    "slug": "kappa"
   },
   {
     "name": "Oni",
@@ -1297,7 +1346,8 @@ const monsters = [
         "alt": "Oni horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/oni.html",
+    "slug": "oni"
   },
   {
     "name": "Yurei",
@@ -1323,7 +1373,8 @@ const monsters = [
         "alt": "Yurei horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/yurei.html",
+    "slug": "yurei"
   },
   {
     "name": "Tengu",
@@ -1349,7 +1400,8 @@ const monsters = [
         "alt": "Tengu horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/tengu.html",
+    "slug": "tengu"
   },
   {
     "name": "Nure-onna",
@@ -1375,7 +1427,8 @@ const monsters = [
         "alt": "Nure-onna horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/nure-onna.html",
+    "slug": "nure-onna"
   },
   {
     "name": "Aka Manto",
@@ -1401,7 +1454,8 @@ const monsters = [
         "alt": "Aka Manto horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/aka-manto.html",
+    "slug": "aka-manto"
   },
   {
     "name": "Slit-Mouthed Woman",
@@ -1427,7 +1481,8 @@ const monsters = [
         "alt": "Slit-Mouthed Woman horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/slit-mouthed-woman.html",
+    "slug": "slit-mouthed-woman"
   },
   {
     "name": "La Llorona",
@@ -1453,7 +1508,8 @@ const monsters = [
         "alt": "La Llorona horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/la-llorona.html",
+    "slug": "la-llorona"
   },
   {
     "name": "El Chupacabra",
@@ -1479,7 +1535,8 @@ const monsters = [
         "alt": "El Chupacabra horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/el-chupacabra.html",
+    "slug": "el-chupacabra"
   },
   {
     "name": "El Silbon",
@@ -1505,7 +1562,8 @@ const monsters = [
         "alt": "El Silbon horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/el-silbon.html",
+    "slug": "el-silbon"
   },
   {
     "name": "Mapinguari",
@@ -1531,7 +1589,8 @@ const monsters = [
         "alt": "Mapinguari horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/mapinguari.html",
+    "slug": "mapinguari"
   },
   {
     "name": "Mothman",
@@ -1557,7 +1616,8 @@ const monsters = [
         "alt": "Mothman horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/mothman.html",
+    "slug": "mothman"
   },
   {
     "name": "Bigfoot",
@@ -1583,7 +1643,8 @@ const monsters = [
         "alt": "Bigfoot horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/bigfoot.html",
+    "slug": "bigfoot"
   },
   {
     "name": "Jersey Devil",
@@ -1609,7 +1670,8 @@ const monsters = [
         "alt": "Jersey Devil horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/jersey-devil.html",
+    "slug": "jersey-devil"
   },
   {
     "name": "Goatman",
@@ -1635,7 +1697,8 @@ const monsters = [
         "alt": "Goatman horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/goatman.html",
+    "slug": "goatman"
   },
   {
     "name": "Bunyip",
@@ -1661,7 +1724,8 @@ const monsters = [
         "alt": "Bunyip horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/bunyip.html",
+    "slug": "bunyip"
   },
   {
     "name": "Yowie",
@@ -1687,7 +1751,8 @@ const monsters = [
         "alt": "Yowie horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/yowie.html",
+    "slug": "yowie"
   },
   {
     "name": "Drop Bear",
@@ -1713,7 +1778,8 @@ const monsters = [
         "alt": "Drop Bear horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/drop-bear.html",
+    "slug": "drop-bear"
   },
   {
     "name": "Loch Ness Monster",
@@ -1739,7 +1805,8 @@ const monsters = [
         "alt": "Loch Ness Monster horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/loch-ness-monster.html",
+    "slug": "loch-ness-monster"
   },
   {
     "name": "Kelpie",
@@ -1765,7 +1832,8 @@ const monsters = [
         "alt": "Kelpie horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/kelpie.html",
+    "slug": "kelpie"
   },
   {
     "name": "Redcap",
@@ -1791,7 +1859,8 @@ const monsters = [
         "alt": "Redcap horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/redcap.html",
+    "slug": "redcap"
   },
   {
     "name": "Black Shuck",
@@ -1817,7 +1886,8 @@ const monsters = [
         "alt": "Black Shuck horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/black-shuck.html",
+    "slug": "black-shuck"
   },
   {
     "name": "Barghest",
@@ -1843,7 +1913,8 @@ const monsters = [
         "alt": "Barghest horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/barghest.html",
+    "slug": "barghest"
   },
   {
     "name": "Headless Horseman",
@@ -1869,7 +1940,8 @@ const monsters = [
         "alt": "Headless Horseman horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/headless-horseman.html",
+    "slug": "headless-horseman"
   },
   {
     "name": "Boogeyman",
@@ -1895,7 +1967,8 @@ const monsters = [
         "alt": "Boogeyman horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/boogeyman.html",
+    "slug": "boogeyman"
   },
   {
     "name": "Creep",
@@ -1921,7 +1994,8 @@ const monsters = [
         "alt": "Creep horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/creep.html",
+    "slug": "creep"
   },
   {
     "name": "The Rake",
@@ -1947,7 +2021,8 @@ const monsters = [
         "alt": "The Rake horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/the-rake.html",
+    "slug": "the-rake"
   },
   {
     "name": "Smiling Man",
@@ -1973,7 +2048,8 @@ const monsters = [
         "alt": "Smiling Man horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/smiling-man.html",
+    "slug": "smiling-man"
   },
   {
     "name": "Faceless Man",
@@ -1999,7 +2075,8 @@ const monsters = [
         "alt": "Faceless Man horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/faceless-man.html",
+    "slug": "faceless-man"
   },
   {
     "name": "Scarecrow",
@@ -2025,7 +2102,8 @@ const monsters = [
         "alt": "Scarecrow horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/scarecrow.html",
+    "slug": "scarecrow"
   },
   {
     "name": "Living Armor",
@@ -2051,7 +2129,8 @@ const monsters = [
         "alt": "Living Armor horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/living-armor.html",
+    "slug": "living-armor"
   },
   {
     "name": "Gargoyle",
@@ -2077,7 +2156,8 @@ const monsters = [
         "alt": "Gargoyle horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/gargoyle.html",
+    "slug": "gargoyle"
   },
   {
     "name": "Cursed Puppet",
@@ -2103,7 +2183,8 @@ const monsters = [
         "alt": "Cursed Puppet horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/cursed-puppet.html",
+    "slug": "cursed-puppet"
   },
   {
     "name": "Mirror Entity",
@@ -2129,7 +2210,8 @@ const monsters = [
         "alt": "Mirror Entity horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/mirror-entity.html",
+    "slug": "mirror-entity"
   },
   {
     "name": "Crawling Corpse",
@@ -2155,7 +2237,8 @@ const monsters = [
         "alt": "Crawling Corpse horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/crawling-corpse.html",
+    "slug": "crawling-corpse"
   },
   {
     "name": "Flesh Golem",
@@ -2181,7 +2264,8 @@ const monsters = [
         "alt": "Flesh Golem horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/flesh-golem.html",
+    "slug": "flesh-golem"
   },
   {
     "name": "Frankenstein's Creature",
@@ -2207,7 +2291,8 @@ const monsters = [
         "alt": "Frankenstein's Creature horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/frankenstein-s-creature.html",
+    "slug": "frankenstein-s-creature"
   },
   {
     "name": "Invisible Man",
@@ -2233,7 +2318,8 @@ const monsters = [
         "alt": "Invisible Man horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/invisible-man.html",
+    "slug": "invisible-man"
   },
   {
     "name": "Mad Scientist",
@@ -2259,7 +2345,8 @@ const monsters = [
         "alt": "Mad Scientist horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/mad-scientist.html",
+    "slug": "mad-scientist"
   },
   {
     "name": "Cursed Clown",
@@ -2285,7 +2372,8 @@ const monsters = [
         "alt": "Cursed Clown horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/cursed-clown.html",
+    "slug": "cursed-clown"
   },
   {
     "name": "Scissor Killer",
@@ -2311,7 +2399,8 @@ const monsters = [
         "alt": "Scissor Killer horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/scissor-killer.html",
+    "slug": "scissor-killer"
   },
   {
     "name": "Pigman",
@@ -2337,7 +2426,8 @@ const monsters = [
         "alt": "Pigman horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/pigman.html",
+    "slug": "pigman"
   },
   {
     "name": "Rat King",
@@ -2363,7 +2453,8 @@ const monsters = [
         "alt": "Rat King horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/rat-king.html",
+    "slug": "rat-king"
   },
   {
     "name": "Plague Doctor",
@@ -2389,7 +2480,8 @@ const monsters = [
         "alt": "Plague Doctor horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/plague-doctor.html",
+    "slug": "plague-doctor"
   },
   {
     "name": "Cemetery Angel",
@@ -2415,7 +2507,8 @@ const monsters = [
         "alt": "Cemetery Angel horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/cemetery-angel.html",
+    "slug": "cemetery-angel"
   },
   {
     "name": "Blood Countess",
@@ -2441,7 +2534,8 @@ const monsters = [
         "alt": "Blood Countess horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/blood-countess.html",
+    "slug": "blood-countess"
   },
   {
     "name": "Night Hag",
@@ -2467,7 +2561,8 @@ const monsters = [
         "alt": "Night Hag horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/night-hag.html",
+    "slug": "night-hag"
   },
   {
     "name": "Mare",
@@ -2493,7 +2588,8 @@ const monsters = [
         "alt": "Mare horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/mare.html",
+    "slug": "mare"
   },
   {
     "name": "Alp",
@@ -2519,7 +2615,8 @@ const monsters = [
         "alt": "Alp horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/alp.html",
+    "slug": "alp"
   },
   {
     "name": "Qallupilluit",
@@ -2545,7 +2642,8 @@ const monsters = [
         "alt": "Qallupilluit horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/qallupilluit.html",
+    "slug": "qallupilluit"
   },
   {
     "name": "Adlet",
@@ -2571,7 +2669,8 @@ const monsters = [
         "alt": "Adlet horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/adlet.html",
+    "slug": "adlet"
   },
   {
     "name": "Aqrabuamelu",
@@ -2597,7 +2696,8 @@ const monsters = [
         "alt": "Aqrabuamelu horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/aqrabuamelu.html",
+    "slug": "aqrabuamelu"
   },
   {
     "name": "Lamassu",
@@ -2623,7 +2723,8 @@ const monsters = [
         "alt": "Lamassu horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/lamassu.html",
+    "slug": "lamassu"
   },
   {
     "name": "Basilisk",
@@ -2649,7 +2750,8 @@ const monsters = [
         "alt": "Basilisk horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/basilisk.html",
+    "slug": "basilisk"
   },
   {
     "name": "Cockatrice",
@@ -2675,7 +2777,8 @@ const monsters = [
         "alt": "Cockatrice horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/cockatrice.html",
+    "slug": "cockatrice"
   },
   {
     "name": "Manticore",
@@ -2701,7 +2804,8 @@ const monsters = [
         "alt": "Manticore horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/manticore.html",
+    "slug": "manticore"
   },
   {
     "name": "Sphinx",
@@ -2727,7 +2831,8 @@ const monsters = [
         "alt": "Sphinx horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/sphinx.html",
+    "slug": "sphinx"
   },
   {
     "name": "Anubis Guardian",
@@ -2753,7 +2858,8 @@ const monsters = [
         "alt": "Anubis Guardian horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/anubis-guardian.html",
+    "slug": "anubis-guardian"
   },
   {
     "name": "Lich",
@@ -2779,7 +2885,8 @@ const monsters = [
         "alt": "Lich horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/lich.html",
+    "slug": "lich"
   },
   {
     "name": "Necromancer",
@@ -2805,7 +2912,8 @@ const monsters = [
         "alt": "Necromancer horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/necromancer.html",
+    "slug": "necromancer"
   },
   {
     "name": "Revenant",
@@ -2831,7 +2939,8 @@ const monsters = [
         "alt": "Revenant horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/revenant.html",
+    "slug": "revenant"
   },
   {
     "name": "Specter",
@@ -2857,7 +2966,8 @@ const monsters = [
         "alt": "Specter horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/specter.html",
+    "slug": "specter"
   },
   {
     "name": "Phantom Rider",
@@ -2883,7 +2993,8 @@ const monsters = [
         "alt": "Phantom Rider horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/phantom-rider.html",
+    "slug": "phantom-rider"
   },
   {
     "name": "Cave Dweller",
@@ -2909,7 +3020,8 @@ const monsters = [
         "alt": "Cave Dweller horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/cave-dweller.html",
+    "slug": "cave-dweller"
   },
   {
     "name": "Deep One",
@@ -2935,6 +3047,7 @@ const monsters = [
         "alt": "Deep One horror image placeholder 3"
       }
     ],
-    "profileUrl": ""
+    "profileUrl": "monster-profiles/deep-one.html",
+    "slug": "deep-one"
   }
 ];

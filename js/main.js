@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (year) year.textContent = new Date().getFullYear();
 
   const page = document.body.dataset.page;
-  document.querySelectorAll(".nav-link").forEach(link => {
+  document.querySelectorAll(".nav-link").forEach((link) => {
     if (link.dataset.page === page) link.classList.add("active");
   });
 
@@ -14,48 +14,60 @@ document.addEventListener("DOMContentLoaded", () => {
   const dangerFilter = document.querySelector("#dangerFilter");
   const monsterGrid = document.querySelector("#monsterGrid");
 
+  function escapeText(value) {
+    return String(value || "")
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;")
+      .replaceAll("'", "&#039;");
+  }
+
   function createMonsterCard(monster) {
-    const gallery = (monster.images || []).map((image, index) => `
-      <figure class="monster-gallery-slot">
-        <div class="monster-image-placeholder" role="img" aria-label="${image.alt}">
-          <span>Image ${index + 1}</span>
-        </div>
-        <figcaption>${monster.name} image slot ${index + 1}</figcaption>
-      </figure>
-    `).join("");
+    const gallery = (monster.images || [])
+      .slice(0, 3)
+      .map((image, index) => `
+        <figure class="monster-gallery-slot">
+          <div class="monster-image-placeholder" role="img" aria-label="${escapeText(image.alt)}">
+            <span>Image ${index + 1}</span>
+          </div>
+          <figcaption>${escapeText(monster.name)} image slot ${index + 1}</figcaption>
+        </figure>
+      `)
+      .join("");
 
     const profileAction = monster.profileUrl
-      ? `<a class="monster-profile-link" href="${monster.profileUrl}">View Full Monster Profile</a>`
+      ? `<a class="monster-profile-link" href="${escapeText(monster.profileUrl)}">View Full Monster Profile</a>`
       : `<span class="monster-profile-soon">Full profile coming soon</span>`;
 
     return `
       <article class="monster-card blood-hover">
-        <div class="monster-image" role="img" aria-label="${monster.alt}">
-          <span>${monster.name}</span>
+        <div class="monster-image" role="img" aria-label="${escapeText(monster.alt)}">
+          <span>${escapeText(monster.name)}</span>
         </div>
 
         <div class="monster-content">
           <div class="monster-meta">
-            <span>${monster.category}</span>
-            <span>${monster.origin}</span>
+            <span>${escapeText(monster.category)}</span>
+            <span>${escapeText(monster.origin)}</span>
           </div>
 
-          <h3>${monster.name}</h3>
-          <p class="monster-description">${monster.description}</p>
+          <h3>${escapeText(monster.name)}</h3>
+          <p class="monster-description">${escapeText(monster.description)}</p>
 
-          <div class="monster-gallery" aria-label="${monster.name} image placeholders">
+          <div class="monster-gallery" aria-label="${escapeText(monster.name)} image placeholders">
             ${gallery}
           </div>
 
           <div class="monster-details">
-            <p><strong>Strengths:</strong> ${monster.strengths}</p>
-            <p><strong>Weaknesses:</strong> ${monster.weaknesses}</p>
+            <p><strong>Strengths:</strong> ${escapeText(monster.strengths)}</p>
+            <p><strong>Weaknesses:</strong> ${escapeText(monster.weaknesses)}</p>
           </div>
 
           <div class="monster-card-bottom">
             ${profileAction}
-            <div class="danger danger-${monster.dangerLevel.toLowerCase()}">
-              Danger Level: ${monster.dangerLevel}
+            <div class="danger danger-${escapeText(monster.dangerLevel).toLowerCase()}">
+              Danger Level: ${escapeText(monster.dangerLevel)}
             </div>
           </div>
         </div>
@@ -70,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const selectedCategory = categoryFilter ? categoryFilter.value : "all";
     const selectedDanger = dangerFilter ? dangerFilter.value : "all";
 
-    const filtered = monsters.filter(monster => {
+    const filtered = monsters.filter((monster) => {
       const text = `${monster.name} ${monster.category} ${monster.origin} ${monster.description}`.toLowerCase();
       const matchesSearch = text.includes(searchTerm);
       const matchesCategory = selectedCategory === "all" || monster.category === selectedCategory;
@@ -81,29 +93,34 @@ document.addEventListener("DOMContentLoaded", () => {
     monsterGrid.innerHTML = filtered.map(createMonsterCard).join("");
 
     const count = document.querySelector("#monsterCount");
-    if (count) count.textContent = `${filtered.length} monsters found`;
+    if (count) {
+      const label = filtered.length === 1 ? "monster found" : "monsters found";
+      count.textContent = `${filtered.length} ${label}`;
+    }
   }
 
   function populateFilters() {
     if (typeof monsters === "undefined") return;
 
     if (categoryFilter) {
-      const categories = [...new Set(monsters.map(monster => monster.category))].sort();
-      categoryFilter.innerHTML = `<option value="all">All categories</option>` +
-        categories.map(category => `<option value="${category}">${category}</option>`).join("");
+      const categories = [...new Set(monsters.map((monster) => monster.category))].sort();
+      categoryFilter.innerHTML =
+        `<option value="all">All categories</option>` +
+        categories.map((category) => `<option value="${escapeText(category)}">${escapeText(category)}</option>`).join("");
     }
 
     if (dangerFilter) {
       const levels = ["Low", "Medium", "High", "Extreme"];
-      dangerFilter.innerHTML = `<option value="all">All danger levels</option>` +
-        levels.map(level => `<option value="${level}">${level}</option>`).join("");
+      dangerFilter.innerHTML =
+        `<option value="all">All danger levels</option>` +
+        levels.map((level) => `<option value="${level}">${level}</option>`).join("");
     }
   }
 
   populateFilters();
   renderMonsters();
 
-  [searchInput, categoryFilter, dangerFilter].forEach(control => {
+  [searchInput, categoryFilter, dangerFilter].forEach((control) => {
     if (control) control.addEventListener("input", renderMonsters);
   });
 });

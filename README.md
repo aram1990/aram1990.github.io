@@ -1,59 +1,87 @@
-# Red Dark Echoes — RDE Website
+# Red Dark Echoes Complete SEO Monster Website
 
-A professional dark horror website built in separate editable files.
+This version contains:
+- Home page
+- Monster Index
+- Horror Stories
+- News
+- Contact
+- 113 individual SEO-optimized monster profile pages
+- Clean `js/monsters.js`
+- Clean `js/main.js`
+- Responsive CSS
+- Advertisement placeholders
+- 3 image placeholders per monster
+- `sitemap.xml`
+- `robots.txt`
 
-## Pages
-- `index.html` — Home
-- `monster-index.html` — Searchable monster library with 100 monsters
-- `horror-stories.html` — Horror story placeholders
-- `news.html` — Horror news and site updates
-- `contact.html` — Contact page with contact@rde.com
+## Upload to GitHub Pages
 
-## Main edit points
-- Change colors/design: `css/style.css`
-- Change mobile layout: `css/responsive.css`
-- Add/edit monsters: `js/monsters.js`
-- Change search/filter behavior: `js/main.js`
-- Replace image placeholders: add images in `assets/images/` and update image paths in `js/monsters.js`
+Upload the CONTENTS of this folder directly into your repository root.
 
-## Advertisement placeholders
-Ad areas are marked with the class `ad-slot`. Replace the text inside those blocks with your ad code later.
-
-## SEO
-Each page includes title, description, keywords, Open Graph tags, semantic HTML, and readable headings.
-
-
-## Monster image placeholders
-Each monster now supports 3 image placeholders through the `images` array in `js/monsters.js`.
-
-Example:
-```js
-images: [
-  { src: "assets/images/monsters/vampire-1.jpg", alt: "Vampire horror image placeholder 1" },
-  { src: "assets/images/monsters/vampire-2.jpg", alt: "Vampire horror image placeholder 2" },
-  { src: "assets/images/monsters/vampire-3.jpg", alt: "Vampire horror image placeholder 3" }
-]
+Correct:
+```
+index.html
+monster-index.html
+contact.html
+horror-stories.html
+news.html
+css/
+js/
+assets/
+monster-profiles/
+sitemap.xml
+robots.txt
 ```
 
-The design shows 3 clean image slots inside each monster card without breaking the layout.
+Wrong:
+```
+red-dark-echoes/
+  index.html
+  css/
+  js/
+```
 
+After uploading:
+1. Commit changes
+2. Wait 1-2 minutes
+3. Hard refresh the live site
 
-## Individual monster profile pages
-This version includes two example profile pages:
+Windows: Ctrl + F5  
+Mac: Cmd + Shift + R
 
-- `monster-profiles/vampire.html`
-- `monster-profiles/werewolf.html`
+## Editing monsters
 
-In `js/monsters.js`, the monsters Vampire and Werewolf have a `profileUrl` field.
-That makes their monster cards show a clickable button: `View Full Monster Profile`.
+Edit `js/monsters.js`.
 
-To add a new monster page:
-1. Copy `monster-profiles/vampire.html`
-2. Rename it, for example `ghost.html`
-3. Change the text inside the file
-4. In `js/monsters.js`, find the Ghost object and add:
-   `"profileUrl": "monster-profiles/ghost.html"`
+Every monster has:
+- name
+- category
+- origin
+- description
+- strengths
+- weaknesses
+- dangerLevel
+- images
+- profileUrl
 
+## Editing profile pages
 
-## Equal card layout fix
-Monster cards now use a bottom section so profile buttons and Danger Level labels stay aligned across the grid.
+All monster pages are in:
+
+`monster-profiles/`
+
+Example:
+
+`monster-profiles/vampire.html`
+
+## Adding real images
+
+Put images in:
+
+`assets/images/monsters/`
+
+Use names like:
+- vampire-1.jpg
+- vampire-2.jpg
+- vampire-3.jpg
