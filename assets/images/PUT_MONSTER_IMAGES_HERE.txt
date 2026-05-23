@@ -1,0 +1,1 @@
+Add monster images here. Match file names in js/monsters.js or update the image paths.
